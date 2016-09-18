@@ -14,7 +14,7 @@ app.get('/first-url',function(req,res){
 });
 
 app.get('/second-url',function(req,res){
-    res.send("this is for SECOND URL");
+    res.sendFile(path.join(__dirname,'ui','second-url.html'));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
