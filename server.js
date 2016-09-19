@@ -13,6 +13,10 @@ app.get('/first-url',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'first-url.html'));
 });
 
+app.get('/content',function(req,res){
+    res.sendFile(path.join(__dirname,'ui','content.html'));
+});
+
 app.get('/second-url',function(req,res){
     res.sendFile(path.join(__dirname,'ui','second-url.html'));
 });
